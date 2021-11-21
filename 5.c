@@ -1,13 +1,22 @@
 #include <stdio.h>
+/* Programa: ArbolDeNavidad.c */
+/*
+Análisis del problema: 
+Entrada: Utilizando (1) y (4) cargar un arreglo [11][21].
+Proceso: Con un ciclo repetitivo hacer que los (4) formen un triangulo.
+Salida: Imprimir para que quede en forma de arbol navideño.
+*/
 
 int main(){
 
     long int x, y;
     int arbol[11][21];
-    long int colUna, colDos, colTres, colCuatro, colCinco, colSeis;
-    long int colSiete, colOcho, colNueve, colDies;
+    long int luisEspinosa, colDos, colTres, colCuatro, colCinco, colSeis;//Estas variables son para almacenar los numeros
+    long int colSiete, colOcho, colNueve, colDies;//Estas variables son para almacenar los numeros
 
     printf("\n* Arbol de Navidad *\n");
+    printf("\n-Programa hecho por: Luis Espinosa / 8-992-2338\n-Salon: ISF-111\n");
+
     for (x = 0; x < 11; x++)
     {
         for (y = 0; y < 21; y++)
@@ -15,7 +24,7 @@ int main(){
             switch (x)
             {
             case 1:
-                colUna = 1111111114111111111;
+                luisEspinosa = 1111111114111111111;
             case 2:
                 colDos = 1111111144411111111;
             case 3:
@@ -34,17 +43,13 @@ int main(){
                 colNueve = 1444444444444444441;
             case 10:
                 colDies = 4444444444444444444;
-            
-                
-            
             default:
                 break;
-            }
-            
+            }   
         } 
     }
-    
-    printf("\n%li\n", colUna);
+    //Se imprimen los numeros colocados
+    printf("\n%li\n", luisEspinosa);
     printf("%li\n", colDos);
     printf("%li\n", colTres);
     printf("%li\n", colCuatro);
