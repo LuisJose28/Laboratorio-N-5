@@ -1,5 +1,13 @@
 #include <stdio.h>
 
+/* Programa: CalificacionesDeEstudiantes.c */
+/*
+Análisis del problema: 
+Entrada: Leer 3 calificaciones de 4 estudiantes en un arreglo.
+Proceso: Calcular el promedio de cada estudiante.
+Salida: Imprimir el promedio de cada estudiante con su respectiva letra (A, B, C, D O F).
+*/
+
 //las funciones la utilice de tipo 'void', ya que debía darle un parametro, pero NO queria retornar nada.
 void NotaUno(float parametro) //esta funcion servira para saber la equivalencia de la nota del estudiante 1.
 {
@@ -106,10 +114,13 @@ void NotaCuatro(float parametro) //esta funcion servira para saber la equivalenc
 int main(){
     int x, y; // la variable 'x' equivale a las filas. La variable 'y' equivale a las columnas.
     float calificaciones[4][3];
-    float notaUno, notaDos, notaTres, notaCuatro;//En cada una de estas variables se almacena la sumatoria de las 3 calificaciones de cada estudiante.
+    float luisEspinosa;//En cada una de estas variables se almacena la sumatoria de las 3 calificaciones de cada estudiante (estudiante 1).
+    float notaDos, notaTres, notaCuatro;//En cada una de estas variables se almacena la sumatoria de las 3 calificaciones de cada estudiante.
     float promedioUno, promedioDos, promedioTres, promedioCuatro;//En cada una de estas variables se almacena el promedio de cada estudiante.
 
     printf("\n* Calificaciones de los estudiantes *\n");
+    printf("\n-Programa hecho por: Luis Espinosa / 8-992-2338\n-Salon: ISF-111\n");
+
     printf("\n* A continuacion agregue los datos para completar la matriz \n\n");
 
     for ( x = 0; x < 4; x++){
@@ -125,8 +136,8 @@ int main(){
         {
             if (x == 0)
             {
-                notaUno = notaUno + calificaciones[x][y];
-                promedioUno = notaUno / 3;//promedio del Estudiante 1
+                luisEspinosa = luisEspinosa + calificaciones[x][y];
+                promedioUno = luisEspinosa / 3;//promedio del Estudiante 1
                 
             }
             else if (x ==1)
@@ -152,6 +163,7 @@ int main(){
     
     printf("\n* Resumen de notas *\n");
 
+    //Se manda a imprimir cada una de las equivalencias de los estudiantes
     NotaUno(promedioUno);
     NotaDos(promedioDos);
     NotaTres(promedioTres);
