@@ -1,4 +1,11 @@
 #include <stdio.h>
+/* Programa: MenorAMayor.c */
+/*
+Análisis del problema: 
+Entrada: Leer 10 (diez) valores numericos.
+Proceso: Ordenar el arreglo de menor a mayor.
+Salida: Imprimir los valores del arreglo de menor a mayor.
+*/
 
 int main(){
 
@@ -6,6 +13,7 @@ int main(){
     int a, b, c;
 
     printf("\n* Ordenar numeros de Menor a Mayor  *\n");
+    printf("\n-Programa hecho por: Luis Espinosa / 8-992-2338\n-Salon: ISF-111\n");
     printf("\n* A continuacion ingrese los numeros que desea ordenar  *\n\n");
 
     for ( a = 0; a < 10; a++)
@@ -20,9 +28,9 @@ int main(){
         {                          //la variable 'c' hace referencia a un valor dentro del arreglo (Valor de la derecha).
             if(numeros[b] > numeros[c])
             {
-                int temporal = numeros[c];
+                int luisEspinosa = numeros[c]; 
                 numeros[c] = numeros[b];
-                numeros[b] = temporal;
+                numeros[b] = luisEspinosa;
             }
         }  
     }
