@@ -9,55 +9,59 @@ Salida: Imprimir para que quede en forma de arbol navideño.
 
 int main(){
 
-    long int x, y;
-    int arbol[11][21];
-    long int luisEspinosa, colDos, colTres, colCuatro, colCinco, colSeis;//Estas variables son para almacenar los numeros
-    long int colSiete, colOcho, colNueve, colDies;//Estas variables son para almacenar los numeros
+    int x;
+    int luis[11][21];
 
     printf("\n* Arbol de Navidad *\n");
     printf("\n-Programa hecho por: Luis Espinosa / 8-992-2338\n-Salon: ISF-111\n");
 
     for (x = 0; x < 11; x++)
     {
-        for (y = 0; y < 21; y++)
+        if (x == 0)
         {
-            switch (x)
-            {
-            case 1:
-                luisEspinosa = 1111111114111111111;
-            case 2:
-                colDos = 1111111144411111111;
-            case 3:
-                colTres = 1111111444441111111;
-            case 4:
-                colCuatro = 1111114444444111111;
-            case 5:
-                colCinco = 1111144444444411111;
-            case 6:
-                colSeis = 1111444444444441111;
-            case 7:
-                colSiete = 1114444444444444111;
-            case 8:
-                colOcho = 1144444444444444411;
-            case 9:
-                colNueve = 1444444444444444441;
-            case 10:
-                colDies = 4444444444444444444;
-            default:
-                break;
-            }   
-        } 
+            printf("\n111111111141111111111\n");
+        }
+        else if (x == 1)
+        {
+            printf("111111111444111111111\n");
+        }
+         else if (x == 2)
+        {
+            printf("111111114444411111111\n");
+        }
+        else if (x == 3)
+        {
+            printf("111111144444441111111\n");
+        }
+        else if (x == 4)
+        {
+            printf("111111444444444111111\n");
+        }
+        else if (x == 5)
+        {
+            printf("111114444444444411111\n");
+        }
+        else if (x == 6)
+        {
+            printf("111144444444444441111\n");
+        }
+        else if (x == 7)
+        {
+            printf("111444444444444444111\n");
+        }
+        else if (x == 8)
+        {
+            printf("114444444444444444411\n");
+        }
+        else if (x == 9)
+        {
+            printf("144444444444444444441\n");
+        }
+        else if (x == 10)
+        {
+            printf("444444444444444444444\n\n");
+        }   
     }
-    //Se imprimen los numeros colocados
-    printf("\n%li\n", luisEspinosa);
-    printf("%li\n", colDos);
-    printf("%li\n", colTres);
-    printf("%li\n", colCuatro);
-    printf("%li\n", colCinco);
-    printf("%li\n", colSeis);
-    printf("%li\n", colSiete);
-    printf("%li\n", colOcho);
-    printf("%li\n", colNueve);
-    printf("%li\n", colDies);
 
+return 0;
 }
